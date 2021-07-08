@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+</head>
+<header style="font-size: 30px; border: 2px solid red; font-style: italic; padding: 10px; margin: 50px;">Application Form</header>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+        <div>
+        <label for="name" style="padding: 100px;">Name</label>
+        <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="address" style="padding: 93px;">Address</label>
+            <input type="address" name="address" id="address" required>
+        </div>
+        <div>
+            <label for="zipcode" style="padding: 93px;">Zipcode</label>
+            <input type="number" name="zipcode" id="zipcode" required>
+        </div>
+        <div>
+        <label for="email" style="padding: 100px;">Email</label>
+        <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="age" style="padding: 106px;">Age</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="1">
+        </div>
+        <div>
+            <label for="date" style="padding: 104px;">Date</label>
+            <input type="date" name="date" id="date" min="2022-31-12">
+        </div>
+        <div style="margin-left: 100px;">Gender
+        </div>
+            <label for="male" style="padding: 100px;">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+        </div>
+        <div>
+            <label for="female" style="padding: 92.5px;">Female</label>
+            <input type="radio" name="gender" id="female" value="female">
+        </div>
+        </div>
+        <div>
+            <label for="bio" style="padding: 106.5px;">Bio</label>
+            <textarea id="bio" name="bio"></textarea>
+        </div>
+        <input type="hidden" name="hidden" value="h1">
+        <div>
+            <label for="file" style="padding: 104px;">File</label>
+            <input id="file" type="file" name="file">
+        </div>
+        <div>
+            <label for="phone" style="padding: 96px;">Phone</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+            <label for="url" style="padding: 100px;">URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <label for="Adhar no." style="padding: 84px;">Adhar no.</label>
+        <input type="Adhar no." name="Adhar no." id="Adhar no.">
+        <div>
+        <label style="margin-left: 87px;">
+            Password
+        <input style="margin-left: 83.5px;"  type="password" name="password" required>
+        </label>
+        </div>
+        <button style="margin-left: 200px; font-family: 'Courier New', Courier, monospace;" type="reset">Reset</button>
+        <button style="margin-left: 30px; font-family: 'Courier New', Courier, monospace;" type="submit">Submit</button>
+    </form>
+</body>
+</html>
